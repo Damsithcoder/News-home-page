@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <img class="logo" src="assets/images/logo.svg" alt="">
+      <ul class="">
+        <li><a href="#">  Home</a></li>
+        <li><a href="#">  New</li></a> 
+        <li><a href="#">  Popular</a></li>
+        <li><a href="#">  Trending</a></li>
+        <li><a href="#">  Categories</a></li>
+      </ul>
+      <img class="close hide" src="assets/images/icon-menu-close.svg" alt="">
+      <img class="menu" src="assets/images/icon-menu.svg" alt="">
+    </nav>
+    <div class="pic">
+      <img src="assets/images/image-web-3-mobile.jpg" alt="">
+    </div>
+    <div class="title">
+      <h1>  The Bright Future of Web 3.0?
+      </h1>
+    </div>
+    <div class="content">
+      <p class="description">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p>
+      <button>Read More</button>
+    </div>
+    <div class="sidebar">
+      <h2>New</h2>
+      <div class="card">
+        <h3> <a href="#">Hydrogen VS Electric Cars</a></h3>
+        <p class="cardnews">  Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </div>
+      <div class="card">
+        <h3> <a href="#">The Downsides of AI Artistry</a> </h3>
+        <p class="cardnews">  What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </div>
+      <div class="card">
+        <h3> <a href="#">Is VC Funding Drying Up?</a></h3>
+        <p class="cardnews">  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </div>
+    </div>
+    <div class="newtech">
+      <div class="article">
+        <div class="model-pic">
+          <img src="assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="model-details">
+          <p class="num">01</p>
+          <h4> <a href="#">Reviving Retro PCs</a> 
+          </h4>
+          <p class="model-descript">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="model-pic">
+          <img src="assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="model-details">
+          <p class="num">02</p>
+          <h4> <a href="#">  Top 10 Laptops of 2022</a> 
+          </h4>
+          <p class="model-descript">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="model-pic">
+          <img src="assets/images/image-gaming-growth.jpg" alt="">
+        </div>
+        <div class="model-details">
+          <p class="num">03</p>
+          <h4> <a href="#"> The Growth of Gaming</a>  
+          </h4>
+          <p class="model-descript">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+ <script>
+  const icon = document.querySelector('.menu')
+  const icon_close = document.querySelector('.close')
+  const ul = document.querySelector('ul')
+  icon.addEventListener('click',function (param) {
+    ul.style.right = "0"
+    icon_close.classList.remove('hide')
+    document.querySelector('main').style.opacity= "0.7"
+    ul.style.opacity= "1"
+    
+   })
+   icon_close.addEventListener('click',function (param) { 
+    ul.style.right = "-300px"
+    icon_close.classList.add('hide')
+    document.querySelector('main').style.opacity= "1"
+
+
+    })
+   
+
+ </script>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
